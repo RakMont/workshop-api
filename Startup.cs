@@ -10,7 +10,9 @@ using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
-
+using Microsoft.OpenApi.Models;
+using workshop_api.business_logic;
+using workshop_api.business_logic.interfaces;
 namespace workshop_api
 {
     public class Startup
@@ -25,8 +27,12 @@ namespace workshop_api
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddTransient<IBusinessLogic,BusinessLogic>();
             services.AddControllers();
-        }
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v3", new OpenApiInfo { Title = "workshop", Version = "v3" });
+            });        }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -46,6 +52,9 @@ namespace workshop_api
             {
                 endpoints.MapControllers();
             });
+
+            app.UseSwagger();
+            app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v3/swagger.json", "workshop v3"));
         }
     }
 }

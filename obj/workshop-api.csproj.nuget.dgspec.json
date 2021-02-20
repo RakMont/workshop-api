@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Sukuna\\Desktop\\workshop-api\\workshop-api.csproj": {}
+    "c:\\Users\\Sukuna\\Desktop\\workshop-api\\workshop-api.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Sukuna\\Desktop\\workshop-api\\workshop-api.csproj": {
+    "c:\\Users\\Sukuna\\Desktop\\workshop-api\\workshop-api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Sukuna\\Desktop\\workshop-api\\workshop-api.csproj",
+        "projectUniqueName": "c:\\Users\\Sukuna\\Desktop\\workshop-api\\workshop-api.csproj",
         "projectName": "workshop-api",
-        "projectPath": "C:\\Users\\Sukuna\\Desktop\\workshop-api\\workshop-api.csproj",
+        "projectPath": "c:\\Users\\Sukuna\\Desktop\\workshop-api\\workshop-api.csproj",
         "packagesPath": "C:\\Users\\Sukuna\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Sukuna\\Desktop\\workshop-api\\obj\\",
+        "outputPath": "c:\\Users\\Sukuna\\Desktop\\workshop-api\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Sukuna\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -35,6 +35,20 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "dependencies": {
+            "Swashbuckle.AspNetCore.Swagger": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerGen": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            },
+            "Swashbuckle.AspNetCore.SwaggerUi": {
+              "target": "Package",
+              "version": "[6.0.7, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",

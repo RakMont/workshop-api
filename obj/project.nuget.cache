@@ -1,8 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "D91ay1LomB+i6k9Y3PdsZ7Qrp4UbrZCuRLs/iRQSjzYP6RskvnuQt9TdLCOXtnIDgeIosmimDYt66CGEBuEybg==",
+  "dgSpecHash": "IAIzPXxXwfQ6mab7X/9yDh3tyjRYM+Frsc6yGpwfMKLjQ2cRe4Bqai48ggwKNfn/HZzmEeP9f8X7uvA7ljT4yA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Sukuna\\Desktop\\workshop-api\\workshop-api.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "c:\\Users\\Sukuna\\Desktop\\workshop-api\\workshop-api.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Sukuna\\.nuget\\packages\\microsoft.openapi\\1.2.3\\microsoft.openapi.1.2.3.nupkg.sha512",
+    "C:\\Users\\Sukuna\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.0.7\\swashbuckle.aspnetcore.swagger.6.0.7.nupkg.sha512",
+    "C:\\Users\\Sukuna\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.0.7\\swashbuckle.aspnetcore.swaggergen.6.0.7.nupkg.sha512",
+    "C:\\Users\\Sukuna\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.0.7\\swashbuckle.aspnetcore.swaggerui.6.0.7.nupkg.sha512"
+  ],
   "logs": []
 }
